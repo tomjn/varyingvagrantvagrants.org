@@ -9,7 +9,7 @@
 title: Varying Vagrant Vagrants
 email: jeremy.felt@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://varyingvagrantvagrants.org" # the base hostname & protocol for your site
+#url: "https://varyingvagrantvagrants.org" # the base hostname & protocol for your site
 markdown: kramdown
 plugins: [jekyll-paginate]
 permalink: /blog/:year/:month/:day/:title.html
