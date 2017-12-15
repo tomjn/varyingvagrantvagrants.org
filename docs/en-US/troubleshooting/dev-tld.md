@@ -39,7 +39,7 @@ WordPress will have been installed with `.dev` in the site URL, so you need to u
 1. SSH into VVV using `vagrant ssh`
 2.  `cd` into the `/srv/www` folder, then `cd` into the subfolder with your site. This should be the same as your `www` folder.
 3. Enter the `public_html` subfolder so that we can use WP CLI
-4. Run `wp search-replace '.dev' '.test'`
+4. Run `wp search-replace '.dev' '.test' --recurse-objects` ( if it's a multisite, add ` --network` on the end )
 
 If you've hardcoded the `.dev` domain in your plugins or themes, or `wp-config.php`, those will need manually changing
 
@@ -50,7 +50,7 @@ These are the commands that would change the default site over from `.dev` to `.
  - `vagrant ssh`
  - `cd /srv/www`
  - `cd wordpress-default/public_html`
- - `wp search-replace '.dev' '.test'`
+ - `wp search-replace '.dev' '.test' --recurse-objects` ( if it's a multisite, add ` --network` on the end )
 
 ## Migrating from `.local`
 
